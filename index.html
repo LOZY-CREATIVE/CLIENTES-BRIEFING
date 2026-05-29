@@ -12,30 +12,25 @@
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;font-weight:300;min-height:100vh;overflow-x:hidden;}
 .wrap{max-width:680px;margin:0 auto;padding:56px 24px 100px;}
-/* header */
 .hdr{margin-bottom:52px;animation:fadeUp .5s ease both;}
 .logo-area{margin-bottom:40px;}
 .logo-area svg{height:104px;width:auto;display:block;}
 .badge{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:10px;}
 .hdr h1{font-family:'Montserrat',sans-serif;font-size:clamp(26px,5vw,38px);font-weight:700;line-height:1.1;letter-spacing:-.02em;color:var(--black);margin-bottom:12px;}
 .hdr p{font-size:14px;line-height:1.7;color:var(--muted);max-width:480px;}
-/* progress */
 .prog-wrap{margin-bottom:44px;animation:fadeUp .5s .1s ease both;}
 .prog-meta{display:flex;justify-content:space-between;margin-bottom:8px;}
 .prog-meta span{font-size:11px;color:var(--muted);font-family:'Montserrat',sans-serif;letter-spacing:.05em;}
 .prog-track{height:1.5px;background:var(--border);border-radius:2px;overflow:hidden;}
 .prog-fill{height:100%;background:var(--blue);border-radius:2px;transition:width .4s cubic-bezier(.4,0,.2,1);}
-/* steps */
 .step{display:none;animation:fadeUp .35s ease both;}
 .step.active{display:block;}
 .step-lbl{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin-bottom:28px;}
-/* questions */
 .q{margin-bottom:36px;padding-bottom:36px;border-bottom:1px solid var(--border);}
 .q:last-of-type{border-bottom:none;margin-bottom:0;padding-bottom:0;}
 .ql{display:block;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:600;color:var(--black);margin-bottom:5px;line-height:1.4;}
 .hint{font-size:12px;color:var(--muted);margin-bottom:14px;line-height:1.5;}
 .req{color:var(--blue);margin-left:2px;}
-/* inputs */
 input[type=text],input[type=email],input[type=tel],input[type=url],textarea,select{width:100%;background:var(--card);border:1px solid var(--border-md);border-radius:8px;color:var(--text);font-family:'Inter',sans-serif;font-size:14px;font-weight:300;padding:13px 15px;outline:none;transition:border-color .2s,box-shadow .2s;resize:vertical;-webkit-appearance:none;}
 input:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(17,77,116,.08);}
 input::placeholder,textarea::placeholder{color:var(--muted);}
@@ -43,7 +38,6 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
 @media(max-width:480px){.row{grid-template-columns:1fr;}}
 .ig{display:flex;flex-direction:column;gap:5px;}
 .ig>label{font-size:10px;font-family:'Montserrat',sans-serif;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--lbl);}
-/* checkboxes */
 .cbg{display:grid;grid-template-columns:1fr 1fr;gap:7px;}
 @media(max-width:480px){.cbg{grid-template-columns:1fr;}}
 .ci{display:flex;align-items:flex-start;gap:10px;padding:11px 13px;background:var(--card);border:1px solid rgba(17,17,18,.18);border-radius:8px;cursor:pointer;transition:border-color .15s,background .15s;user-select:none;}
@@ -55,20 +49,17 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
 .cb svg{display:none;}
 .ci.sel .cb svg{display:block;}
 .ci span{font-size:13px;color:var(--text);line-height:1.4;}
-/* radio cards (bifurcation) */
 .rcs{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
 @media(max-width:480px){.rcs{grid-template-columns:1fr;}}
-.rc{padding:16px 18px;background:var(--card);border:1.5px solid rgba(17,17,18,.18);border-radius:10px;cursor:pointer;transition:border-color .15s,background .15s,box-shadow .15s;user-select:none;}
+.rc{padding:18px 20px;background:var(--card);border:1.5px solid rgba(17,17,18,.18);border-radius:10px;cursor:pointer;transition:border-color .15s,background .15s,box-shadow .15s;user-select:none;}
 .rc:hover{border-color:var(--blue-bd);background:var(--blue-lt);}
 .rc.sel{border-color:var(--blue);background:var(--blue-lt);box-shadow:0 0 0 3px rgba(17,77,116,.08);}
 .rc input{display:none;}
 .rc-t{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:600;color:var(--black);margin-bottom:4px;}
 .rc-d{font-size:12px;color:var(--muted);line-height:1.4;}
-/* outro */
 .outro{margin-top:7px;display:flex;align-items:center;gap:10px;padding:10px 13px;background:var(--card);border:1px solid rgba(17,17,18,.18);border-radius:8px;}
 .outro input[type=text]{border:none;background:none;padding:0;font-size:13px;flex:1;box-shadow:none;}
 .outro input[type=text]:focus{border:none;box-shadow:none;}
-/* nav */
 .nav{display:flex;gap:10px;margin-top:40px;}
 .btn{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;letter-spacing:.06em;padding:13px 26px;border-radius:8px;border:none;cursor:pointer;transition:all .18s;outline:none;}
 .btn-p{background:var(--blue);color:#fff;flex:1;}
@@ -76,12 +67,10 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
 .btn-p:active{transform:translateY(0);box-shadow:none;}
 .btn-s{background:transparent;color:var(--muted);border:1px solid var(--border-md);}
 .btn-s:hover{color:var(--black);border-color:var(--black);}
-/* success */
 #succ{display:none;text-align:center;padding:80px 0;animation:fadeUp .5s ease both;}
 .succ-ic{width:56px;height:56px;border-radius:50%;background:var(--blue-lt);border:1.5px solid var(--blue);display:flex;align-items:center;justify-content:center;margin:0 auto 28px;}
 #succ h2{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:700;color:var(--black);margin-bottom:10px;}
 #succ p{font-size:14px;color:var(--muted);line-height:1.7;max-width:360px;margin:0 auto;}
-/* footer */
 .foot{margin-top:60px;padding-top:18px;border-top:1px solid var(--border);}
 .foot span{font-size:11px;color:rgba(17,17,18,.25);letter-spacing:.05em;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
@@ -90,7 +79,6 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
 <body>
 <div class="wrap">
 
-<!-- HEADER -->
 <div class="hdr">
   <div class="logo-area">
     <svg viewBox="0 0 3000 3000" xmlns="http://www.w3.org/2000/svg">
@@ -109,25 +97,22 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
       <path fill="#111112" d="M732.37,1339.63h150.78l-.35,3.56h-41.25l59.28,216.2,103.58-216.2h-41.25l.35-3.56h82.5l-.35,3.56h-38.4l-216.2,459.43c-15.28,32.71-33.32,71.83-81.68,71.83-35.56,0-59.79-21.33-56.74-52.63,2.36-24.18,20.59-43.38,42.64-43.38,16.36,0,31.74,9.96,29.52,32.71-1.87,19.2-17.57,56.19,5.19,56.19,16.36,0,35.94-18.49,58.44-66.85l67.56-145.79-85.55-311.5h-38.4l.35-3.56Z"/>
     </svg>
   </div>
-  <div class="badge">Briefing de Projeto</div>
-  <h1>Vamos criar<br>algo juntos.</h1>
-  <p>Este formulário é o ponto de partida do nosso projeto. Quanto mais você compartilhar sobre seus objetivos e referências, mais preciso será o resultado.</p>
+  <div class="badge">Primeiro Contato &amp; Briefing</div>
+  <h1>Conte-nos sobre<br>seu projeto.</h1>
+  <p>Preencha as informações abaixo para que eu possa entender melhor o seu projeto e entrar em contato com a proposta certa.</p>
 </div>
 
-<!-- PROGRESS -->
 <div class="prog-wrap" id="prog-wrap">
   <div class="prog-meta">
-    <span id="step-lbl">Etapa 1 de 5</span>
-    <span id="step-pct">0%</span>
+    <span id="step-lbl">Etapa 1</span>
+    <span id="step-pct"></span>
   </div>
   <div class="prog-track"><div class="prog-fill" id="prog-fill" style="width:0%"></div></div>
 </div>
 
-<!-- HELPER MACRO: check icon -->
-
 <form id="form" action="https://formspree.io/f/xnjrrpzq" method="POST" novalidate>
 
-<!-- ══ STEP 1 ══ -->
+<!-- ══ STEP 1: IDENTIFICAÇÃO + BIFURCAÇÃO ══ -->
 <div class="step active" data-step="1">
   <div class="step-lbl">01 — Identificação</div>
 
@@ -148,24 +133,18 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
   </div>
 
   <div class="q">
-    <span class="ql">Segmento de atuação</span>
-    <p class="hint">Medicina, moda, esporte, gastronomia, imóveis, etc.</p>
-    <input type="text" name="segmento" placeholder="Ex: Clínica de dermatologia">
-  </div>
-
-  <div class="q">
-    <span class="ql">Quantos vídeos você precisa?<span class="req">*</span></span>
+    <span class="ql">Como posso te ajudar?<span class="req">*</span></span>
     <p class="hint">Isso vai direcionar o restante do formulário.</p>
-    <div class="rcs" id="qty-cards">
-      <label class="rc">
-        <input type="radio" name="qtd" value="um">
-        <div class="rc-t">Um vídeo</div>
-        <div class="rc-d">Projeto pontual — campanha, lançamento, institucional.</div>
+    <div class="rcs" id="tipo-cards">
+      <label class="rc" data-tipo="contato">
+        <input type="radio" name="tipo" value="Primeiro contato">
+        <div class="rc-t">Quero conhecer a Lozy</div>
+        <div class="rc-d">Primeiro contato — ainda estou avaliando.</div>
       </label>
-      <label class="rc">
-        <input type="radio" name="qtd" value="pacote">
-        <div class="rc-t">Mais de um</div>
-        <div class="rc-d">Pacote recorrente ou múltiplos conteúdos.</div>
+      <label class="rc" data-tipo="briefing">
+        <input type="radio" name="tipo" value="Briefing de projeto">
+        <div class="rc-t">Já sou cliente</div>
+        <div class="rc-d">Preciso passar um briefing de projeto.</div>
       </label>
     </div>
   </div>
@@ -173,88 +152,101 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
   <div class="nav"><button type="button" class="btn btn-p" onclick="nextStep()">Continuar →</button></div>
 </div>
 
-<!-- ══ STEP 2 ══ -->
-<div class="step" data-step="2">
-  <div class="step-lbl">02 — Objetivos e Público</div>
+<!-- ══ STEP 2A: PRIMEIRO CONTATO (curto) ══ -->
+<div class="step" data-step="2a">
+  <div class="step-lbl">02 — Seu Projeto</div>
 
   <div class="q">
-    <span class="ql">Principal objetivo do projeto<span class="req">*</span></span>
+    <span class="ql">O que você está buscando?<span class="req">*</span></span>
     <p class="hint">Marque todos que se aplicam.</p>
     <div class="cbg">
-      <label class="ci"><input type="checkbox" name="obj" value="divulgar"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Divulgar produto ou serviço</span></label>
-      <label class="ci"><input type="checkbox" name="obj" value="vendas"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Aumentar vendas / campanha</span></label>
-      <label class="ci"><input type="checkbox" name="obj" value="explicar"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Explicar processo ou serviço</span></label>
-      <label class="ci"><input type="checkbox" name="obj" value="conexao"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Gerar conexão com o público</span></label>
-      <label class="ci"><input type="checkbox" name="obj" value="autoridade"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Reforçar autoridade</span></label>
-      <label class="ci"><input type="checkbox" name="obj" value="evento"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Registrar ou divulgar evento</span></label>
-      <label class="ci"><input type="checkbox" name="obj" value="clientes"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Trazer novos clientes</span></label>
-      <label class="ci"><input type="checkbox" name="obj" value="fidelizar"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Fidelizar clientes atuais</span></label>
-    </div>
-    <div class="outro"><span style="font-size:12px;color:var(--muted);white-space:nowrap">Outro:</span><input type="text" name="obj_outro" placeholder="Descreva..."></div>
-  </div>
-
-  <div class="q">
-    <span class="ql">O que você quer que o público sinta?</span>
-    <p class="hint">Marque todos que se aplicam.</p>
-    <div class="cbg">
-      <label class="ci"><input type="checkbox" name="sent" value="confianca"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Confiança</span></label>
-      <label class="ci"><input type="checkbox" name="sent" value="inspiracao"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Inspiração para agir</span></label>
-      <label class="ci"><input type="checkbox" name="sent" value="identificacao"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Identificação com a marca</span></label>
-      <label class="ci"><input type="checkbox" name="sent" value="urgencia"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Urgência</span></label>
-      <label class="ci"><input type="checkbox" name="sent" value="curiosidade"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Curiosidade</span></label>
-      <label class="ci"><input type="checkbox" name="sent" value="seguranca"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Segurança</span></label>
-      <label class="ci"><input type="checkbox" name="sent" value="admiracao"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Admiração</span></label>
-      <label class="ci"><input type="checkbox" name="sent" value="leveza"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Leveza / Positividade</span></label>
+      <label class="ci"><input type="checkbox" name="busca" value="video-unico"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Um vídeo específico</span></label>
+      <label class="ci"><input type="checkbox" name="busca" value="pacote-mensal"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Pacote mensal de conteúdo</span></label>
+      <label class="ci"><input type="checkbox" name="busca" value="institucional"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Vídeo institucional</span></label>
+      <label class="ci"><input type="checkbox" name="busca" value="evento"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Cobertura de evento</span></label>
+      <label class="ci"><input type="checkbox" name="busca" value="ads"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Conteúdo para anúncios</span></label>
+      <label class="ci"><input type="checkbox" name="busca" value="nao-sei"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Ainda não sei ao certo</span></label>
     </div>
   </div>
 
   <div class="q">
-    <span class="ql">Quem é o seu público principal?<span class="req">*</span></span>
-    <p class="hint">Faixa etária, interesses, região, poder aquisitivo, necessidades específicas.</p>
-    <textarea name="publico" rows="4" placeholder="Ex: Mulheres entre 30 e 50 anos, classe A/B, São Paulo, interessadas em saúde estética..."></textarea>
+    <span class="ql">Qual é o seu segmento?</span>
+    <p class="hint">Já respondeu antes, mas reforça aqui se quiser detalhar.</p>
+    <textarea name="contexto" rows="3" placeholder="Conte um pouco sobre o seu negócio e o que pretende comunicar..."></textarea>
+  </div>
+
+  <div class="q">
+    <span class="ql">Orçamento estimado</span>
+    <p class="hint">Isso nos ajuda a apresentar a proposta certa.</p>
+    <div class="cbg">
+      <label class="ci"><input type="radio" name="orcamento" value="ate3k"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Até R$ 3.000</span></label>
+      <label class="ci"><input type="radio" name="orcamento" value="3-7k"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>R$ 3.000 – R$ 7.000</span></label>
+      <label class="ci"><input type="radio" name="orcamento" value="7-15k"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>R$ 7.000 – R$ 15.000</span></label>
+      <label class="ci"><input type="radio" name="orcamento" value="15k+"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Acima de R$ 15.000</span></label>
+    </div>
+  </div>
+
+  <div class="q">
+    <span class="ql">Mais alguma coisa?</span>
+    <textarea name="obs_contato" rows="3" placeholder="Contexto extra, urgências, dúvidas..."></textarea>
   </div>
 
   <div class="nav">
     <button type="button" class="btn btn-s" onclick="prevStep()">← Voltar</button>
-    <button type="button" class="btn btn-p" onclick="nextStep()">Continuar →</button>
+    <button type="button" class="btn btn-p" onclick="submitForm()">Enviar →</button>
   </div>
 </div>
 
-<!-- ══ STEP 3 — SCOPE (bifurcado) ══ -->
-<div class="step" data-step="3">
-  <div class="step-lbl" id="s3lbl">03 — Escopo de Produção</div>
+<!-- ══ STEP 2B: CLIENTE — ESCOPO ══ -->
+<div class="step" data-step="2b">
+  <div class="step-lbl">02 — Escopo do Projeto</div>
 
-  <!-- SINGLE VIDEO -->
+  <div class="q">
+    <span class="ql">Quantos conteúdos você precisa?<span class="req">*</span></span>
+    <div class="rcs" id="qty-cards">
+      <label class="rc" data-qty="um">
+        <input type="radio" name="qtd" value="Um vídeo">
+        <div class="rc-t">Um vídeo</div>
+        <div class="rc-d">Projeto pontual — campanha, lançamento, institucional.</div>
+      </label>
+      <label class="rc" data-qty="pacote">
+        <input type="radio" name="qtd" value="Pacote">
+        <div class="rc-t">Mais de um</div>
+        <div class="rc-d">Pacote recorrente ou múltiplos conteúdos.</div>
+      </label>
+    </div>
+  </div>
+
+  <!-- SINGLE -->
   <div id="sc-single">
     <div class="q">
-      <span class="ql">Qual é o tema ou assunto do conteúdo?<span class="req">*</span></span>
-      <p class="hint">Descreva brevemente o que o conteúdo deve comunicar.</p>
+      <span class="ql">Tema ou assunto do conteúdo</span>
       <textarea name="tema" rows="3" placeholder="Ex: Apresentação institucional com foco nos tratamentos de estética avançada..."></textarea>
     </div>
     <div class="q">
-      <span class="ql">Duração aproximada desejada</span>
+      <span class="ql">Duração aproximada</span>
       <div class="cbg">
-        <label class="ci"><input type="radio" name="dur" value="30s"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Até 30 segundos</span></label>
-        <label class="ci"><input type="radio" name="dur" value="1min"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>30 seg a 1 minuto</span></label>
-        <label class="ci"><input type="radio" name="dur" value="3min"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>1 a 3 minutos</span></label>
-        <label class="ci"><input type="radio" name="dur" value="longo"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Mais de 3 minutos</span></label>
+        <label class="ci"><input type="radio" name="dur" value="Até 30s"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Até 30 segundos</span></label>
+        <label class="ci"><input type="radio" name="dur" value="30s a 1min"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>30 seg a 1 minuto</span></label>
+        <label class="ci"><input type="radio" name="dur" value="1 a 3min"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>1 a 3 minutos</span></label>
+        <label class="ci"><input type="radio" name="dur" value="Mais de 3min"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Mais de 3 minutos</span></label>
       </div>
     </div>
     <div class="q">
       <span class="ql">Horas de captação estimadas</span>
       <div class="cbg">
-        <label class="ci"><input type="radio" name="hcap" value="2h"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Até 2 horas</span></label>
-        <label class="ci"><input type="radio" name="hcap" value="4h"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Meio período (~4h)</span></label>
-        <label class="ci"><input type="radio" name="hcap" value="8h"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Dia inteiro (~8h)</span></label>
-        <label class="ci"><input type="radio" name="hcap" value="?"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Não sei estimar</span></label>
+        <label class="ci"><input type="radio" name="hcap" value="Até 2h"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Até 2 horas</span></label>
+        <label class="ci"><input type="radio" name="hcap" value="Meio período ~4h"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Meio período (~4h)</span></label>
+        <label class="ci"><input type="radio" name="hcap" value="Dia inteiro ~8h"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Dia inteiro (~8h)</span></label>
+        <label class="ci"><input type="radio" name="hcap" value="Não sei estimar"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Não sei estimar</span></label>
       </div>
     </div>
     <div class="q">
       <span class="ql">Haverá deslocamento ou locação externa?</span>
       <div class="cbg">
-        <label class="ci"><input type="radio" name="loc" value="nao"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Não — local fixo definido</span></label>
-        <label class="ci"><input type="radio" name="loc" value="sim"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Sim — há deslocamento</span></label>
-        <label class="ci"><input type="radio" name="loc" value="talvez"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Ainda não sei</span></label>
+        <label class="ci"><input type="radio" name="loc" value="Não"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Não — local fixo</span></label>
+        <label class="ci"><input type="radio" name="loc" value="Sim"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Sim — há deslocamento</span></label>
+        <label class="ci"><input type="radio" name="loc" value="Não sei"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Ainda não sei</span></label>
       </div>
     </div>
   </div>
@@ -262,51 +254,50 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
   <!-- PACKAGE -->
   <div id="sc-pkg" style="display:none">
     <div class="q">
-      <span class="ql">Quantos conteúdos por mês?<span class="req">*</span></span>
+      <span class="ql">Conteúdos por mês<span class="req">*</span></span>
       <div class="cbg">
-        <label class="ci"><input type="radio" name="qtdm" value="4"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Até 4 por mês</span></label>
-        <label class="ci"><input type="radio" name="qtdm" value="4-8"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>4 a 8 por mês</span></label>
-        <label class="ci"><input type="radio" name="qtdm" value="8-16"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>8 a 16 por mês</span></label>
-        <label class="ci"><input type="radio" name="qtdm" value="16+"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Mais de 16 por mês</span></label>
+        <label class="ci"><input type="radio" name="qtdm" value="Até 4/mês"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Até 4 por mês</span></label>
+        <label class="ci"><input type="radio" name="qtdm" value="4 a 8/mês"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>4 a 8 por mês</span></label>
+        <label class="ci"><input type="radio" name="qtdm" value="8 a 16/mês"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>8 a 16 por mês</span></label>
+        <label class="ci"><input type="radio" name="qtdm" value="Mais de 16/mês"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Mais de 16 por mês</span></label>
       </div>
     </div>
     <div class="q">
       <span class="ql">Frequência de captação</span>
       <div class="cbg">
-        <label class="ci"><input type="radio" name="freq" value="semanal"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Semanal</span></label>
-        <label class="ci"><input type="radio" name="freq" value="quinzenal"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Quinzenal</span></label>
-        <label class="ci"><input type="radio" name="freq" value="mensal"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>1 sessão por mês</span></label>
-        <label class="ci"><input type="radio" name="freq" value="flexivel"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Flexível / a definir</span></label>
+        <label class="ci"><input type="radio" name="freq" value="Semanal"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Semanal</span></label>
+        <label class="ci"><input type="radio" name="freq" value="Quinzenal"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Quinzenal</span></label>
+        <label class="ci"><input type="radio" name="freq" value="1 sessão/mês"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>1 sessão por mês</span></label>
+        <label class="ci"><input type="radio" name="freq" value="Flexível"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Flexível / a definir</span></label>
       </div>
     </div>
     <div class="q">
       <span class="ql">Horas de captação por sessão</span>
       <div class="cbg">
-        <label class="ci"><input type="radio" name="hses" value="2h"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Até 2 horas</span></label>
-        <label class="ci"><input type="radio" name="hses" value="4h"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Meio período (~4h)</span></label>
-        <label class="ci"><input type="radio" name="hses" value="8h"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Dia inteiro (~8h)</span></label>
-        <label class="ci"><input type="radio" name="hses" value="?"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Não sei estimar</span></label>
+        <label class="ci"><input type="radio" name="hses" value="Até 2h"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Até 2 horas</span></label>
+        <label class="ci"><input type="radio" name="hses" value="Meio período ~4h"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Meio período (~4h)</span></label>
+        <label class="ci"><input type="radio" name="hses" value="Dia inteiro ~8h"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Dia inteiro (~8h)</span></label>
+        <label class="ci"><input type="radio" name="hses" value="Não sei estimar"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Não sei estimar</span></label>
       </div>
     </div>
     <div class="q">
-      <span class="ql">Quais formatos de conteúdo?</span>
-      <p class="hint">Marque todos que se aplicam.</p>
+      <span class="ql">Formatos necessários</span>
       <div class="cbg">
-        <label class="ci"><input type="checkbox" name="fmt" value="reels"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Reels / TikTok (vertical curto)</span></label>
-        <label class="ci"><input type="checkbox" name="fmt" value="youtube"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>YouTube (horizontal longo)</span></label>
-        <label class="ci"><input type="checkbox" name="fmt" value="stories"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Stories</span></label>
-        <label class="ci"><input type="checkbox" name="fmt" value="feed"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Feed (quadrado / paisagem)</span></label>
-        <label class="ci"><input type="checkbox" name="fmt" value="institucional"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Vídeo institucional</span></label>
-        <label class="ci"><input type="checkbox" name="fmt" value="ads"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Anúncios / Ads pagos</span></label>
+        <label class="ci"><input type="checkbox" name="fmt" value="Reels/TikTok"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Reels / TikTok</span></label>
+        <label class="ci"><input type="checkbox" name="fmt" value="YouTube"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>YouTube</span></label>
+        <label class="ci"><input type="checkbox" name="fmt" value="Stories"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Stories</span></label>
+        <label class="ci"><input type="checkbox" name="fmt" value="Feed"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Feed</span></label>
+        <label class="ci"><input type="checkbox" name="fmt" value="Institucional"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Institucional</span></label>
+        <label class="ci"><input type="checkbox" name="fmt" value="Ads"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Anúncios / Ads</span></label>
       </div>
     </div>
     <div class="q">
       <span class="ql">Duração do contrato</span>
       <div class="cbg">
-        <label class="ci"><input type="radio" name="ctrt" value="pontual"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Pontual (sem recorrência)</span></label>
-        <label class="ci"><input type="radio" name="ctrt" value="3m"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>3 meses</span></label>
-        <label class="ci"><input type="radio" name="ctrt" value="6m"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>6 meses</span></label>
-        <label class="ci"><input type="radio" name="ctrt" value="12m"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>12 meses</span></label>
+        <label class="ci"><input type="radio" name="ctrt" value="Pontual"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Pontual</span></label>
+        <label class="ci"><input type="radio" name="ctrt" value="3 meses"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>3 meses</span></label>
+        <label class="ci"><input type="radio" name="ctrt" value="6 meses"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>6 meses</span></label>
+        <label class="ci"><input type="radio" name="ctrt" value="12 meses"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>12 meses</span></label>
       </div>
     </div>
   </div>
@@ -317,52 +308,68 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
   </div>
 </div>
 
-<!-- ══ STEP 4 ══ -->
-<div class="step" data-step="4">
-  <div class="step-lbl">04 — Tom, Estilo e Conteúdo</div>
+<!-- ══ STEP 3: TOM E ESTILO ══ -->
+<div class="step" data-step="3">
+  <div class="step-lbl">03 — Tom e Estilo</div>
 
   <div class="q">
     <span class="ql">Tom do conteúdo</span>
     <p class="hint">Marque todos que se aplicam.</p>
     <div class="cbg">
-      <label class="ci"><input type="checkbox" name="tom" value="inspirador"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Inspirador / Motivacional</span></label>
-      <label class="ci"><input type="checkbox" name="tom" value="institucional"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Institucional / Profissional</span></label>
-      <label class="ci"><input type="checkbox" name="tom" value="descontraido"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Descontraído / Leve</span></label>
-      <label class="ci"><input type="checkbox" name="tom" value="emocional"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Emocional / Humano</span></label>
-      <label class="ci"><input type="checkbox" name="tom" value="educativo"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Educativo / Didático</span></label>
-      <label class="ci"><input type="checkbox" name="tom" value="elegante"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Elegante / Sofisticado</span></label>
-      <label class="ci"><input type="checkbox" name="tom" value="jovem"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Jovem / Dinâmico</span></label>
-      <label class="ci"><input type="checkbox" name="tom" value="humor"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Humorístico / Engraçado</span></label>
+      <label class="ci"><input type="checkbox" name="tom" value="Inspirador"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Inspirador / Motivacional</span></label>
+      <label class="ci"><input type="checkbox" name="tom" value="Institucional"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Institucional / Profissional</span></label>
+      <label class="ci"><input type="checkbox" name="tom" value="Descontraído"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Descontraído / Leve</span></label>
+      <label class="ci"><input type="checkbox" name="tom" value="Emocional"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Emocional / Humano</span></label>
+      <label class="ci"><input type="checkbox" name="tom" value="Educativo"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Educativo / Didático</span></label>
+      <label class="ci"><input type="checkbox" name="tom" value="Elegante"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Elegante / Sofisticado</span></label>
+      <label class="ci"><input type="checkbox" name="tom" value="Jovem"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Jovem / Dinâmico</span></label>
+      <label class="ci"><input type="checkbox" name="tom" value="Humorístico"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Humorístico / Engraçado</span></label>
     </div>
   </div>
 
   <div class="q">
     <span class="ql">O que o público gosta?</span>
     <div class="cbg">
-      <label class="ci"><input type="checkbox" name="gosta" value="curto"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Conteúdo curto e objetivo</span></label>
-      <label class="ci"><input type="checkbox" name="gosta" value="dinamico"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Edição dinâmica</span></label>
-      <label class="ci"><input type="checkbox" name="gosta" value="autentico"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Estilo autêntico e natural</span></label>
-      <label class="ci"><input type="checkbox" name="gosta" value="estetica"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Alta qualidade estética</span></label>
-      <label class="ci"><input type="checkbox" name="gosta" value="bastidores"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Bastidores</span></label>
-      <label class="ci"><input type="checkbox" name="gosta" value="educativo"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Conteúdo educativo</span></label>
-      <label class="ci"><input type="checkbox" name="gosta" value="depo"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Depoimentos</span></label>
-      <label class="ci"><input type="checkbox" name="gosta" value="inter"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Enquetes e interações</span></label>
+      <label class="ci"><input type="checkbox" name="gosta" value="Conteúdo curto"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Conteúdo curto e objetivo</span></label>
+      <label class="ci"><input type="checkbox" name="gosta" value="Edição dinâmica"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Edição dinâmica</span></label>
+      <label class="ci"><input type="checkbox" name="gosta" value="Estilo autêntico"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Estilo autêntico e natural</span></label>
+      <label class="ci"><input type="checkbox" name="gosta" value="Alta estética"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Alta qualidade estética</span></label>
+      <label class="ci"><input type="checkbox" name="gosta" value="Bastidores"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Bastidores</span></label>
+      <label class="ci"><input type="checkbox" name="gosta" value="Conteúdo educativo"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Conteúdo educativo</span></label>
+      <label class="ci"><input type="checkbox" name="gosta" value="Depoimentos"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Depoimentos</span></label>
+      <label class="ci"><input type="checkbox" name="gosta" value="Interações"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Enquetes e interações</span></label>
     </div>
   </div>
 
   <div class="q">
     <span class="ql">O que o público NÃO gosta?</span>
     <div class="cbg">
-      <label class="ci"><input type="checkbox" name="ngosta" value="exagero"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Exagero em vendas</span></label>
-      <label class="ci"><input type="checkbox" name="ngosta" value="tecnico"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Linguagem técnica demais</span></label>
-      <label class="ci"><input type="checkbox" name="ngosta" value="longo"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Conteúdos muito longos</span></label>
-      <label class="ci"><input type="checkbox" name="ngosta" value="formal"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Estilo formal / durão</span></label>
-      <label class="ci"><input type="checkbox" name="ngosta" value="humor-f"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Humor forçado</span></label>
-      <label class="ci"><input type="checkbox" name="ngosta" value="texto"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Excesso de texto na tela</span></label>
-      <label class="ci"><input type="checkbox" name="ngosta" value="qual"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Qualidade ruim de imagem</span></label>
-      <label class="ci"><input type="checkbox" name="ngosta" value="pub"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Publicidade disfarçada</span></label>
+      <label class="ci"><input type="checkbox" name="ngosta" value="Exagero em vendas"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Exagero em vendas</span></label>
+      <label class="ci"><input type="checkbox" name="ngosta" value="Linguagem técnica"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Linguagem técnica demais</span></label>
+      <label class="ci"><input type="checkbox" name="ngosta" value="Vídeos longos"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Conteúdos muito longos</span></label>
+      <label class="ci"><input type="checkbox" name="ngosta" value="Estilo formal"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Estilo formal / durão</span></label>
+      <label class="ci"><input type="checkbox" name="ngosta" value="Humor forçado"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Humor forçado</span></label>
+      <label class="ci"><input type="checkbox" name="ngosta" value="Excesso de texto"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Excesso de texto na tela</span></label>
+      <label class="ci"><input type="checkbox" name="ngosta" value="Qualidade ruim"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Qualidade ruim de imagem</span></label>
+      <label class="ci"><input type="checkbox" name="ngosta" value="Publicidade disfarçada"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Publicidade disfarçada</span></label>
     </div>
   </div>
+
+  <div class="q">
+    <span class="ql">Público principal</span>
+    <p class="hint">Faixa etária, interesses, região, poder aquisitivo.</p>
+    <textarea name="publico" rows="3" placeholder="Ex: Mulheres entre 30 e 50 anos, classe A/B, São Paulo, interessadas em saúde estética..."></textarea>
+  </div>
+
+  <div class="nav">
+    <button type="button" class="btn btn-s" onclick="prevStep()">← Voltar</button>
+    <button type="button" class="btn btn-p" onclick="nextStep()">Continuar →</button>
+  </div>
+</div>
+
+<!-- ══ STEP 4: CONTEÚDO E REFERÊNCIAS ══ -->
+<div class="step" data-step="4">
+  <div class="step-lbl">04 — Conteúdo e Referências</div>
 
   <div class="q">
     <span class="ql">Pontos que não podem faltar</span>
@@ -373,20 +380,19 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
   <div class="q">
     <span class="ql">Restrições</span>
     <p class="hint">Marcas, músicas, imagens ou abordagens que não podem aparecer.</p>
-    <textarea name="restricoes" rows="3" placeholder="Ex: Não citar concorrentes, não usar música com letra, não mostrar o rosto de colaboradores..."></textarea>
+    <textarea name="restricoes" rows="3" placeholder="Ex: Não citar concorrentes, não usar música com letra..."></textarea>
   </div>
 
   <div class="q">
     <span class="ql">Plataformas de distribuição</span>
     <div class="cbg">
-      <label class="ci"><input type="checkbox" name="plt" value="instagram"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Instagram</span></label>
-      <label class="ci"><input type="checkbox" name="plt" value="tiktok"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>TikTok</span></label>
-      <label class="ci"><input type="checkbox" name="plt" value="youtube"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>YouTube</span></label>
-      <label class="ci"><input type="checkbox" name="plt" value="linkedin"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>LinkedIn</span></label>
-      <label class="ci"><input type="checkbox" name="plt" value="site"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Site</span></label>
-      <label class="ci"><input type="checkbox" name="plt" value="evento"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Evento / projeção</span></label>
+      <label class="ci"><input type="checkbox" name="plt" value="Instagram"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Instagram</span></label>
+      <label class="ci"><input type="checkbox" name="plt" value="TikTok"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>TikTok</span></label>
+      <label class="ci"><input type="checkbox" name="plt" value="YouTube"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>YouTube</span></label>
+      <label class="ci"><input type="checkbox" name="plt" value="LinkedIn"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>LinkedIn</span></label>
+      <label class="ci"><input type="checkbox" name="plt" value="Site"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Site</span></label>
+      <label class="ci"><input type="checkbox" name="plt" value="Evento"><div class="cb"><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span>Evento / projeção</span></label>
     </div>
-    <div class="outro"><span style="font-size:12px;color:var(--muted);white-space:nowrap">Outro:</span><input type="text" name="plt_outro" placeholder="Descreva..."></div>
   </div>
 
   <div class="q">
@@ -397,35 +403,23 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
     </div>
   </div>
 
-  <div class="nav">
-    <button type="button" class="btn btn-s" onclick="prevStep()">← Voltar</button>
-    <button type="button" class="btn btn-p" onclick="nextStep()">Continuar →</button>
-  </div>
-</div>
-
-<!-- ══ STEP 5 ══ -->
-<div class="step" data-step="5">
-  <div class="step-lbl">05 — Referências e Observações</div>
-
   <div class="q">
     <span class="ql">Referências de conteúdo</span>
-    <p class="hint">Links de concorrentes, influenciadores, campanhas que admira. Quanto mais específico, melhor.</p>
-    <textarea name="referencias" rows="5" placeholder="Cole links ou descreva. Ex: Campanha de lançamento da Nike Run 2023, perfil do @fulano..."></textarea>
+    <p class="hint">Links de concorrentes, influenciadores, campanhas que admira.</p>
+    <textarea name="referencias" rows="4" placeholder="Cole links ou descreva..."></textarea>
   </div>
 
   <div class="q">
-    <span class="ql">Perfis nas redes sociais</span>
-    <p class="hint">Ajuda a entender seu posicionamento atual.</p>
+    <span class="ql">Perfil nas redes sociais</span>
     <div class="row" style="margin-top:0">
       <div class="ig"><label>Instagram</label><input type="text" name="instagram" placeholder="@seuperfil"></div>
-      <div class="ig"><label>Outro perfil</label><input type="url" name="outro_perfil" placeholder="Link do perfil"></div>
+      <div class="ig"><label>Outro</label><input type="url" name="outro_perfil" placeholder="Link do perfil"></div>
     </div>
   </div>
 
   <div class="q">
     <span class="ql">Mais alguma coisa?</span>
-    <p class="hint">Contexto extra, histórico, algo que não coubesse nas perguntas anteriores.</p>
-    <textarea name="obs" rows="5" placeholder="Fique à vontade..."></textarea>
+    <textarea name="obs" rows="4" placeholder="Contexto extra, histórico, algo que não coubesse nas perguntas anteriores..."></textarea>
   </div>
 
   <div class="nav">
@@ -436,44 +430,66 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
 
 </form>
 
-<!-- SUCCESS -->
 <div id="succ">
   <div class="succ-ic">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12L10 17L19 7" stroke="#114D74" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
   </div>
-  <h2>Briefing recebido.</h2>
-  <p>Obrigado por compartilhar essas informações. Entraremos em contato em breve para dar o próximo passo.</p>
+  <h2>Recebido!</h2>
+  <p>Obrigado por compartilhar essas informações. Entraremos em contato em breve.</p>
 </div>
 
-<!-- FOOTER -->
 <div class="foot"><span>© 2025 Lozy Creative</span></div>
-
 </div>
+
 <script>
-var cur=1,tot=5,modo=null;
+var cur='1', tipo=null, qty=null;
+
+var STEPS_CONTATO = ['1','2a'];
+var STEPS_BRIEFING = ['1','2b','3','4'];
+
+function currentFlow(){return tipo==='briefing' ? STEPS_BRIEFING : STEPS_CONTATO;}
+
+function stepIndex(){return currentFlow().indexOf(cur);}
 
 function upd(){
-  var p=Math.round((cur-1)/tot*100);
+  var flow=currentFlow();
+  var idx=flow.indexOf(cur);
+  var tot=flow.length;
+  var p=Math.round((idx/tot)*100);
   document.getElementById('prog-fill').style.width=p+'%';
-  document.getElementById('step-lbl').textContent='Etapa '+cur+' de '+tot;
+  document.getElementById('step-lbl').textContent='Etapa '+(idx+1)+' de '+tot;
   document.getElementById('step-pct').textContent=p+'%';
 }
 
-function show(n){
+function show(stepId){
   document.querySelectorAll('.step').forEach(function(s){s.classList.remove('active');});
-  var t=document.querySelector('[data-step="'+n+'"]');
+  var t=document.querySelector('[data-step="'+stepId+'"]');
   if(t){t.classList.add('active');t.style.animation='none';requestAnimationFrame(function(){t.style.animation='';});}
+  cur=stepId;
   upd();
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
-function nextStep(){if(cur<tot){cur++;if(cur===3)applyScope();show(cur);}}
-function prevStep(){if(cur>1){cur--;show(cur);}}
+function nextStep(){
+  var flow=currentFlow();
+  var idx=flow.indexOf(cur);
+  if(idx<flow.length-1){
+    var next=flow[idx+1];
+    if(next==='2b') applyScope();
+    show(next);
+  }
+}
+
+function prevStep(){
+  var flow=currentFlow();
+  var idx=flow.indexOf(cur);
+  if(idx>0) show(flow[idx-1]);
+}
 
 function applyScope(){
-  var s=document.getElementById('sc-single'),p=document.getElementById('sc-pkg'),l=document.getElementById('s3lbl');
-  if(modo==='pacote'){s.style.display='none';p.style.display='block';l.textContent='03 — Escopo do Pacote';}
-  else{s.style.display='block';p.style.display='none';l.textContent='03 — Escopo do Vídeo';}
+  var s=document.getElementById('sc-single'),p=document.getElementById('sc-pkg');
+  if(qty==='pacote'){s.style.display='none';p.style.display='block';}
+  else{s.style.display='block';p.style.display='none';}
 }
 
 function submitForm(){
@@ -493,54 +509,57 @@ function submitForm(){
   .catch(function(){alert('Houve um erro ao enviar. Verifique sua conexão.');});
 }
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded',function(){
 
-  // Checkboxes
-  document.querySelectorAll('.ci').forEach(function(label){
-    label.addEventListener('click', function(e){
+  // Tipo cards (primeiro contato vs cliente)
+  document.querySelectorAll('#tipo-cards .rc').forEach(function(card){
+    card.addEventListener('click',function(e){
       e.preventDefault();
-      var inp = label.querySelector('input[type=checkbox]');
-      if(!inp) return;
-      var isNowSelected = !label.classList.contains('sel');
-      label.classList.toggle('sel');
-      inp.checked = isNowSelected;
+      document.querySelectorAll('#tipo-cards .rc').forEach(function(c){c.classList.remove('sel');});
+      card.classList.add('sel');
+      var rb=card.querySelector('input[type=radio]');
+      if(rb)rb.checked=true;
+      tipo=card.getAttribute('data-tipo');
     });
   });
 
-  // Radio buttons inside .ci (ss groups)
-  document.querySelectorAll('.ci input[type=radio]').forEach(function(radio){
-    var label = radio.closest('.ci');
-    if(!label) return;
-    // Remove checkbox listener, add radio listener
-    label.replaceWith(label.cloneNode(true));
-  });
-
-  document.querySelectorAll('.ci input[type=radio]').forEach(function(radio){
-    var label = radio.closest('.ci');
-    if(!label) return;
-    label.addEventListener('click', function(e){
+  // Qty cards (um vs pacote)
+  document.querySelectorAll('#qty-cards .rc').forEach(function(card){
+    card.addEventListener('click',function(e){
       e.preventDefault();
-      var grp = radio.name;
-      document.querySelectorAll('input[name="'+grp+'"]').forEach(function(r){
-        var l = r.closest('.ci');
-        if(l) l.classList.remove('sel');
-        r.checked = false;
-      });
-      label.classList.add('sel');
-      radio.checked = true;
-    });
-  });
-
-  // Radio cards (.rc) for qty selection
-  document.querySelectorAll('.rc').forEach(function(card){
-    card.addEventListener('click', function(e){
-      e.preventDefault();
-      var radio = card.querySelector('input[type=radio]');
-      if(!radio) return;
       document.querySelectorAll('#qty-cards .rc').forEach(function(c){c.classList.remove('sel');});
       card.classList.add('sel');
-      radio.checked = true;
-      modo = radio.value;
+      var rb=card.querySelector('input[type=radio]');
+      if(rb)rb.checked=true;
+      qty=card.getAttribute('data-qty');
+      applyScope();
+    });
+  });
+
+  // Checkboxes
+  document.querySelectorAll('.ci input[type=checkbox]').forEach(function(inp){
+    var label=inp.closest('.ci');
+    if(!label)return;
+    label.addEventListener('click',function(e){
+      e.preventDefault();
+      label.classList.toggle('sel');
+      inp.checked=label.classList.contains('sel');
+    });
+  });
+
+  // Radio buttons inside .ci
+  document.querySelectorAll('.ci input[type=radio]').forEach(function(inp){
+    var label=inp.closest('.ci');
+    if(!label)return;
+    label.addEventListener('click',function(e){
+      e.preventDefault();
+      document.querySelectorAll('input[name="'+inp.name+'"]').forEach(function(r){
+        var l=r.closest('.ci');
+        if(l)l.classList.remove('sel');
+        r.checked=false;
+      });
+      label.classList.add('sel');
+      inp.checked=true;
     });
   });
 
