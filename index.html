@@ -125,7 +125,7 @@ input::placeholder,textarea::placeholder{color:var(--muted);}
 
 <!-- HELPER MACRO: check icon -->
 
-<form id="form" novalidate>
+<form id="form" action="https://formspree.io/f/xnjrrpzq" method="POST" novalidate>
 
 <!-- ══ STEP 1 ══ -->
 <div class="step active" data-step="1">
@@ -459,7 +459,22 @@ function applyScope(){var s=document.getElementById('sc-single'),p=document.getE
 function selectQty(lbl,m){document.querySelectorAll('#qty-cards .rc').forEach(function(el){el.classList.remove('sel');});lbl.classList.add('sel');var rb=lbl.querySelector('input[type=radio]');if(rb)rb.checked=true;modo=m;}
 function tc(lbl){lbl.classList.toggle('sel');var cb=lbl.querySelector('input[type=checkbox]');if(cb)cb.checked=lbl.classList.contains('sel');}
 function ss(lbl,grp){document.querySelectorAll('input[name="'+grp+'"]').forEach(function(inp){inp.closest('.ci').classList.remove('sel');});lbl.classList.add('sel');var rb=lbl.querySelector('input[type=radio]');if(rb)rb.checked=true;}
-function submitForm(){document.getElementById('form').style.display='none';document.getElementById('prog-wrap').style.display='none';document.getElementById('succ').style.display='block';window.scrollTo({top:0,behavior:'smooth'});}
+function submitForm(){
+  var form=document.getElementById('form');
+  var data=new FormData(form);
+  fetch('https://formspree.io/f/xnjrrpzq',{method:'POST',body:data,headers:{'Accept':'application/json'}})
+  .then(function(r){
+    if(r.ok){
+      form.style.display='none';
+      document.getElementById('prog-wrap').style.display='none';
+      document.getElementById('succ').style.display='block';
+      window.scrollTo({top:0,behavior:'smooth'});
+    } else {
+      alert('Houve um erro ao enviar. Tente novamente.');
+    }
+  })
+  .catch(function(){alert('Houve um erro ao enviar. Verifique sua conexão.');});
+});}
 upd();
 </script>
 </body>
